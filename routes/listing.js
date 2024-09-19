@@ -4,7 +4,7 @@ const Listing = require("../listing.js")
 const wrapAsync = require("../utils/wrapAsync.js");
 const ExpressError = require("../utils/expressError.js");
 const {isLoggedIn, isOwner} = require("../init/middleware.js");
-const multer  = require('multer');
+const multer  = require("multer");
 const {storage}= require("../cloudConfig.js");
 const upload = multer({ storage });
 
