@@ -4,7 +4,7 @@ const Listing = require("./listing.js")
 
 
 // const MONGO_URL = 'mongodb://127.0.0.1:27017/wanderlust';
-const dbUrl = process.env.BASE_URL;
+const BASE_URL = 'https://wanderlust-major-project-az6c.onrender.com';
 
 main().then(()=>{
     console.log("connected to DB");
@@ -13,7 +13,7 @@ main().then(()=>{
 });
 
 async function main(){
-    await mongoose.connect(dbUrl);
+    await mongoose.connect(BASE_URL);
 }
 
 const initDB =  async () => {
